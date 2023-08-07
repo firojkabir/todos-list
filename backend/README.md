@@ -10,28 +10,29 @@ The project can be run as a generic NodeJS application in the development enviro
 
 ### Setting up environment variables
 
-The database connection string is passed to the application using environment variable. A sample environment file is added in the project directory. It need to be copied as **.env**.
+The database connection string is passed to the application using the environment variable. A sample environment file is added to the project directory. It needs to be copied as **.env**.
 
 ```
 cp .env.example .env
 ```
 
-The values in the newly created environment file need to be replaced according to the development enviroment.
+The values in the newly created environment file need to be replaced according to the development environment.
 
 ```
-DB_URL=mongodb://localhost:27017/todo-list
 PORT=3001
+JWT_SECRET=Your_secret_key
+DB_URL=mongodb://localhost:27017/todo-list
 ```
 
 ### Running
 
-The project can be run in the local machine using npm. At first the dependencies need to be installed using following command.
+The project can be run on the local machine using npm. At first, the dependencies need to be installed using the following command.
 
 ```
 npm install
 ```
 
-Till this point the dependencies are installed and the project is ready to be run using following command.
+Till this point the dependencies are installed and the project is ready to be run using the following command.
 
 ```
 npm run start
