@@ -1,0 +1,6 @@
+<form [formGroup]="albumForm" (ngSubmit)="onSubmit()" style="margin-top: 15px;">
+	<input id="title" type="text" placeholder="Title" formControlName="title"><br><br>
+	<input id="artist" type="text" placeholder="Artist" formControlName="artist"><br><br>
+
+	<button type="submit" [disabled]="!albumForm.valid">Submit</button>
+</form>

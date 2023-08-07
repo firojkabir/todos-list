@@ -1,0 +1,11 @@
+<h3>User form</h3>
+<form [formGroup]="userForm" (ngSubmit)="onSubmit()" style="margin-top: 15px;">
+	<input id="name" type="text" placeholder="Name" formControlName="name"><br /><br />
+	<input id="email" type="text" placeholder="Email" formControlName="email"><br /><br />
+	<input id="password" type="password" placeholder="Password" formControlName="password"><br /><br />
+	<input id="age" type="number" placeholder="Age" formControlName="age"><br /><br />
+	<input id="country" type="text" placeholder="Country" formControlName="country"><br /><br />
+
+	<button type="submit" [disabled]="!userForm.valid">Submit</button>
+
+</form>

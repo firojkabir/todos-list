@@ -1,0 +1,351 @@
+{
+	"client": "Thunder Client",
+	"collectionName": "todo-api",
+	"dateExported": "2023-05-03T07:22:39.876Z",
+	"version": "1.1",
+	"folders": [
+		{
+			"_id": "b1164a52-2d0f-4d83-86d8-f3e65dcd2254",
+			"name": "todos",
+			"containerId": "",
+			"created": "2023-05-02T12:18:48.699Z",
+			"sortNum": 10000
+		},
+		{
+			"_id": "2baffcb5-0442-4af5-9cba-bb733a8b245f",
+			"name": "users",
+			"containerId": "",
+			"created": "2023-05-02T12:19:20.664Z",
+			"sortNum": 20000
+		},
+		{
+			"_id": "f5ac37ca-905f-4168-92f0-85c2878724f3",
+			"name": "albums",
+			"containerId": "",
+			"created": "2023-05-02T14:19:31.887Z",
+			"sortNum": 30000
+		}
+	],
+	"requests": [
+		{
+			"_id": "1eba5fc6-962e-4113-a336-761033c7a10b",
+			"colId": "afe2617e-132c-46df-90dd-1078b308000f",
+			"containerId": "b1164a52-2d0f-4d83-86d8-f3e65dcd2254",
+			"name": "Update todo by ID",
+			"url": "{{host}}/todos/645130f1e5ecec",
+			"method": "PUT",
+			"sortNum": 10000,
+			"created": "2023-05-01T17:06:37.467Z",
+			"modified": "2023-05-02T16:34:30.943Z",
+			"headers": [
+				{
+					"name": "Authorization",
+					"value": "{{token}}"
+				}
+			],
+			"params": [],
+			"body": {
+				"type": "json",
+				"raw": "{\n  \"title\": \"Running updated 5\",\n  \"completed\": true\n}",
+				"form": []
+			},
+			"tests": []
+		},
+		{
+			"_id": "ac72218f-df80-40b2-a554-abed03b4133b",
+			"colId": "afe2617e-132c-46df-90dd-1078b308000f",
+			"containerId": "2baffcb5-0442-4af5-9cba-bb733a8b245f",
+			"name": "Update user by ID",
+			"url": "{{host}}/users/645169a7f2829d105a94f79b",
+			"method": "PUT",
+			"sortNum": 10000,
+			"created": "2023-05-02T12:19:20.665Z",
+			"modified": "2023-05-02T19:55:26.585Z",
+			"headers": [
+				{
+					"name": "Authorization",
+					"value": "{{token}}"
+				}
+			],
+			"params": [],
+			"body": {
+				"type": "json",
+				"raw": "{\n  \"name\": \"Graham\",\n\t\"email\": \"sincere@april.net\",\n\t\"age\": 25\n}",
+				"form": []
+			},
+			"tests": []
+		},
+		{
+			"_id": "f0af781a-70fb-48f7-9742-877e4c35e6a5",
+			"colId": "afe2617e-132c-46df-90dd-1078b308000f",
+			"containerId": "f5ac37ca-905f-4168-92f0-85c2878724f3",
+			"name": "Update album by ID",
+			"url": "{{host}}/albums/1",
+			"method": "PUT",
+			"sortNum": 10000,
+			"created": "2023-05-02T14:19:31.887Z",
+			"modified": "2023-05-02T14:31:18.313Z",
+			"headers": [
+				{
+					"name": "Authorization",
+					"value": "{{token}}",
+					"isDisabled": true
+				}
+			],
+			"params": [],
+			"body": {
+				"type": "json",
+				"raw": "{\n  \"title\": \"Leanne Graham\",\n\t\"artist\": \"Bret\"\n}",
+				"form": []
+			},
+			"tests": []
+		},
+		{
+			"_id": "b00c60b1-2d25-458d-8701-968ef9030727",
+			"colId": "afe2617e-132c-46df-90dd-1078b308000f",
+			"containerId": "b1164a52-2d0f-4d83-86d8-f3e65dcd2254",
+			"name": "Delete todo by ID",
+			"url": "{{host}}/todos/64512fcd486bc91a55a7753",
+			"method": "DELETE",
+			"sortNum": 20000,
+			"created": "2023-05-01T17:09:51.091Z",
+			"modified": "2023-05-02T15:44:37.676Z",
+			"headers": [],
+			"params": [],
+			"tests": []
+		},
+		{
+			"_id": "c7b12bb3-0977-448f-b1ca-397f99b73e19",
+			"colId": "afe2617e-132c-46df-90dd-1078b308000f",
+			"containerId": "2baffcb5-0442-4af5-9cba-bb733a8b245f",
+			"name": "Delete user by ID",
+			"url": "{{host}}/users/64515e3f4dbfbd9994446f8b",
+			"method": "DELETE",
+			"sortNum": 20000,
+			"created": "2023-05-02T12:19:20.666Z",
+			"modified": "2023-05-02T19:41:03.933Z",
+			"headers": [],
+			"params": [],
+			"tests": []
+		},
+		{
+			"_id": "6838f22d-01e0-4863-a82a-21bffe6346d5",
+			"colId": "afe2617e-132c-46df-90dd-1078b308000f",
+			"containerId": "f5ac37ca-905f-4168-92f0-85c2878724f3",
+			"name": "Delete user by ID",
+			"url": "{{host}}/albums/1",
+			"method": "DELETE",
+			"sortNum": 20000,
+			"created": "2023-05-02T14:19:31.889Z",
+			"modified": "2023-05-02T14:25:35.889Z",
+			"headers": [],
+			"params": [],
+			"tests": []
+		},
+		{
+			"_id": "3e4307a4-d9db-4516-9629-574110681793",
+			"colId": "afe2617e-132c-46df-90dd-1078b308000f",
+			"containerId": "b1164a52-2d0f-4d83-86d8-f3e65dcd2254",
+			"name": "Get all todos",
+			"url": "{{host}}/todos",
+			"method": "GET",
+			"sortNum": 30000,
+			"created": "2023-05-01T17:09:03.144Z",
+			"modified": "2023-05-02T12:19:02.142Z",
+			"headers": [
+				{
+					"name": "Authorization",
+					"value": "{{token}}"
+				}
+			],
+			"params": [],
+			"tests": []
+		},
+		{
+			"_id": "9bd8a190-b62a-4461-8672-177a3039ddb6",
+			"colId": "afe2617e-132c-46df-90dd-1078b308000f",
+			"containerId": "2baffcb5-0442-4af5-9cba-bb733a8b245f",
+			"name": "Get all users",
+			"url": "{{host}}/users",
+			"method": "GET",
+			"sortNum": 30000,
+			"created": "2023-05-02T12:19:20.667Z",
+			"modified": "2023-05-02T12:22:28.273Z",
+			"headers": [
+				{
+					"name": "Authorization",
+					"value": "{{token}}"
+				}
+			],
+			"params": [],
+			"tests": []
+		},
+		{
+			"_id": "fbda1186-9668-498e-b376-869f57da9b02",
+			"colId": "afe2617e-132c-46df-90dd-1078b308000f",
+			"containerId": "f5ac37ca-905f-4168-92f0-85c2878724f3",
+			"name": "Get all users",
+			"url": "{{host}}/albums",
+			"method": "GET",
+			"sortNum": 30000,
+			"created": "2023-05-02T14:19:31.890Z",
+			"modified": "2023-05-02T14:24:25.112Z",
+			"headers": [
+				{
+					"name": "Authorization",
+					"value": "{{token}}"
+				}
+			],
+			"params": [],
+			"tests": []
+		},
+		{
+			"_id": "18eaff7b-1b67-495e-a2dd-f81f1cbfc6d8",
+			"colId": "afe2617e-132c-46df-90dd-1078b308000f",
+			"containerId": "b1164a52-2d0f-4d83-86d8-f3e65dcd2254",
+			"name": "Get todo by ID",
+			"url": "{{host}}/todos/645130f1e5ecec20a312c995",
+			"method": "GET",
+			"sortNum": 40000,
+			"created": "2023-05-01T17:07:53.393Z",
+			"modified": "2023-05-02T15:49:35.989Z",
+			"headers": [],
+			"params": [],
+			"tests": []
+		},
+		{
+			"_id": "6b13f97c-4b9a-4f0f-b378-688d65af11cf",
+			"colId": "afe2617e-132c-46df-90dd-1078b308000f",
+			"containerId": "2baffcb5-0442-4af5-9cba-bb733a8b245f",
+			"name": "Get user by ID",
+			"url": "{{host}}/users/64516cc086f14fcea55a612c",
+			"method": "GET",
+			"sortNum": 40000,
+			"created": "2023-05-02T12:19:20.668Z",
+			"modified": "2023-05-02T20:04:33.210Z",
+			"headers": [
+				{
+					"name": "Authorization",
+					"value": "{{token}}"
+				}
+			],
+			"params": [],
+			"tests": []
+		},
+		{
+			"_id": "52988476-bd24-4c7c-a2b0-1f221186574b",
+			"colId": "afe2617e-132c-46df-90dd-1078b308000f",
+			"containerId": "f5ac37ca-905f-4168-92f0-85c2878724f3",
+			"name": "Get user by ID",
+			"url": "{{host}}/albums/2",
+			"method": "GET",
+			"sortNum": 40000,
+			"created": "2023-05-02T14:19:31.891Z",
+			"modified": "2023-05-02T14:24:38.696Z",
+			"headers": [
+				{
+					"name": "Authorization",
+					"value": "{{token}}"
+				}
+			],
+			"params": [],
+			"tests": []
+		},
+		{
+			"_id": "e86df720-856d-4950-bdd2-616acf35a150",
+			"colId": "afe2617e-132c-46df-90dd-1078b308000f",
+			"containerId": "b1164a52-2d0f-4d83-86d8-f3e65dcd2254",
+			"name": "Create todo",
+			"url": "{{host}}/todos",
+			"method": "POST",
+			"sortNum": 50000,
+			"created": "2023-05-01T17:08:30.244Z",
+			"modified": "2023-05-02T15:34:39.781Z",
+			"headers": [
+				{
+					"name": "Authorization",
+					"value": "{{token}}"
+				}
+			],
+			"params": [],
+			"body": {
+				"type": "json",
+				"raw": "{\n  \"title\": \"Running\",\n  \"completed\": true\n}",
+				"form": []
+			},
+			"tests": []
+		},
+		{
+			"_id": "ec6651e7-9f78-49ea-bd8f-f355d4ec27e1",
+			"colId": "afe2617e-132c-46df-90dd-1078b308000f",
+			"containerId": "2baffcb5-0442-4af5-9cba-bb733a8b245f",
+			"name": "Create user",
+			"url": "{{host}}/users",
+			"method": "POST",
+			"sortNum": 50000,
+			"created": "2023-05-02T12:19:20.669Z",
+			"modified": "2023-05-02T20:04:13.318Z",
+			"headers": [
+				{
+					"name": "Authorization",
+					"value": "{{token}}"
+				}
+			],
+			"params": [],
+			"body": {
+				"type": "json",
+				"raw": "{\n  \"name\": \"Leanne Graham\",\n  \"email\": \"Sincere@april.com\",\n  \"password\": \"ahdb324\",\n  \"age\": 22\n}",
+				"form": []
+			},
+			"tests": []
+		},
+		{
+			"_id": "8976d2d7-5a82-4e0c-8369-9b2487f0d549",
+			"colId": "afe2617e-132c-46df-90dd-1078b308000f",
+			"containerId": "f5ac37ca-905f-4168-92f0-85c2878724f3",
+			"name": "Create user",
+			"url": "{{host}}/albums",
+			"method": "POST",
+			"sortNum": 50000,
+			"created": "2023-05-02T14:19:31.892Z",
+			"modified": "2023-05-02T14:43:17.795Z",
+			"headers": [
+				{
+					"name": "Authorization",
+					"value": "{{token}}"
+				}
+			],
+			"params": [],
+			"body": {
+				"type": "json",
+				"raw": "{\n  \"title\": \"Leanne Graham\",\n\t\"artist\": 1\n}",
+				"form": []
+			},
+			"tests": []
+		},
+		{
+			"_id": "8976d2d7-5a82-4e0c-8369-9b2487f0d548",
+			"colId": "afe2617e-132c-46df-90dd-1078b308000f",
+			"containerId": "f5ac37ca-905f-4168-92f0-85c2878724f3",
+			"name": "Create new albums",
+			"url": "{{host}}/albums",
+			"method": "POST",
+			"sortNum": 50000,
+			"created": "2023-05-02T14:19:31.892Z",
+			"modified": "2023-05-02T14:43:17.795Z",
+			"headers": [
+				{
+					"name": "Authorization",
+					"value": "{{token}}"
+				}
+			],
+			"params": [],
+			"body": {
+				"type": "json",
+				"raw": "{\n  \"title\": \"Leanne Graham\",\n\t\"artist\": 1\n}",
+				"form": []
+			},
+			"tests": []
+		}
+	]
+}

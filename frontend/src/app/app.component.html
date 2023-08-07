@@ -1,0 +1,6 @@
+<button (click)="navigateToTodoList()">Todo List</button>
+<button *ngIf="!isLoggedIn" (click)="navigateToRegister()">Signup</button>
+<button *ngIf="!isLoggedIn" (click)="navigateToLogin()">Login</button>
+<button *ngIf="isLoggedIn" (click)="logout()">Logout</button>
+
+<router-outlet></router-outlet>

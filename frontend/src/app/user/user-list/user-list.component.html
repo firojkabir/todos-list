@@ -1,0 +1,10 @@
+<button [routerLink]="['/users/add']" style="margin-bottom: 15px;">Add user</button>
+<div *ngFor="let user of users">
+	<b>{{ user.name }}</b>
+	<p>
+		{{ user.email }} - {{ user.age }} - {{ user.country }}
+	</p>
+	<button (click)="navigateToEditUser(user._id)">Edit</button>
+	<button (click)="deleteUserById(user._id)" style="margin-left: 5px;">Delete</button>
+	<hr>
+</div>

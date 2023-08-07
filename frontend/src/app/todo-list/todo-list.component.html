@@ -1,0 +1,8 @@
+<button (click)="navigateToAddTodo()">Add todo</button>
+
+<div *ngFor="let todo of todos">
+	<p>{{ todo._id }} - {{ todo.title }} - {{ todo.completed }}</p>
+
+	<button (click)="navigateToEditTodo(todo._id)">Edit</button>
+	<button (click)="deleteTodoById(todo._id)">Delete</button>
+</div>

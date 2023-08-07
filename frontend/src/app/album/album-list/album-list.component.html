@@ -1,0 +1,8 @@
+<button [routerLink]="['/albums/add']" style="margin-bottom: 15px;">Add album</button>
+<div *ngFor="let album of albums">
+	<b>{{ album.title }}</b>
+	<p>{{ album.artist }}</p>
+	<button (click)="navigateToEditAlbum(album._id)">Edit</button>
+	<button (click)="deleteAlbumById(album._id)" style="margin-left: 5px;">Delete</button>
+	<hr>
+</div>

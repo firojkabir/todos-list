@@ -1,0 +1,6 @@
+<form [formGroup]="todoForm" (ngSubmit)="onSubmit()">
+	<input id="title" type="text" formControlName="title">
+	<input id="completed" type="checkbox" formControlName="completed">
+
+	<button type="submit" [disabled]="!todoForm.valid">Submit</button>
+</form>
